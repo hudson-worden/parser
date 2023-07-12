@@ -11,6 +11,7 @@ class TokenType(enum.Enum):
     T_LPAR = 5
     T_RPAR = 6
     T_END = 7
+    T_MODULO = 8
 
 
 class Node:
@@ -27,7 +28,9 @@ def lexical_analysis(s):
         '*': TokenType.T_MULT,
         '/': TokenType.T_DIV,
         '(': TokenType.T_LPAR,
-        ')': TokenType.T_RPAR}
+        ')': TokenType.T_RPAR,
+        '%': TokenType.T_MODULO
+    }
 
     tokens = []
     for c in s:
@@ -65,7 +68,7 @@ def parse_e(tokens):
 def parse_e2(tokens):
     left_node = parse_e3(tokens)
 
-    while tokens[0].token_type in [TokenType.T_MULT, TokenType.T_DIV]:
+    while tokens[0].token_type in [TokenType.T_MULT, TokenType.T_DIV, TokenType.T_MODULO]:
         node = tokens.pop(0)
         node.children.append(left_node)
         node.children.append(parse_e3(tokens))

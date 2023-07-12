@@ -24,6 +24,11 @@ test_computation('2+(3*4)', 14)
 test_computation('2-(3*4+1)', -11)
 test_computation('2*(3*4+1)', 26)
 test_computation('8/((1+3)*2)', 1)
+test_computation('2%3', 2)
+test_computation('2%3+1', 3)
+test_computation('1+2%3', 3)
+test_computation('(1+2)%3', 0)
+test_computation('(1+2)%3', 0)
 
 try:
     test_computation('1+1)', 1)
