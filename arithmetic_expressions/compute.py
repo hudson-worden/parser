@@ -1,7 +1,6 @@
 import sys
 import operator
-import parser
-
+from arithmetic_expressions import parser
 
 operations = {
     parser.TokenType.T_PLUS: operator.add,

@@ -8,7 +8,7 @@ It exists solely for educational reasons.
 ## How to Use it
 
 ```
-python3 compute.py '2*(3+4)'
+python3 arithmetic_expressions/compute.py '2*(3+4)'
 ```
 and you should receive `14` as the result.
 This is perhaps not so surprising, but you can also run

@@ -10,5 +10,4 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     packages=setuptools.find_packages(where="."),
     python_requires=">=3.7",
-    package_dir={"math_parser": ""},
 )

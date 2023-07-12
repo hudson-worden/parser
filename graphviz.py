@@ -1,4 +1,4 @@
-import parser
+from arithmetic_expressions import parser
 import sys
 
 node_counter = 1
