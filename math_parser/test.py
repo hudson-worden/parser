@@ -1,5 +1,4 @@
-import compute
-import parser
+from math_parser import compute, parser
 
 
 def test_computation(inputstring, expected_output):

@@ -1,6 +1,6 @@
 import sys
 import operator
-import parser
+from math_parser import parser
 
 
 operations = {
